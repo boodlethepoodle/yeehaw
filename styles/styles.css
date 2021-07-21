@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+#navbar {
+    display:grid;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-rows: 200px;;
+    border-bottom: ridge pink 10px;
+    background-color:white;
+    grid-template-areas:
+    "yeehaw-main search-btn login shopping-cart"
+}
+
+#yeehaw-main {
+    grid-area: yeehaw-main;
+    justify-self:center;
+    align-self: center;
+    font-family: 'Oi', cursive;
+    font-size: 80px;
+    border: 0;
+}
+#search-btn {
+    grid-area: search-btn;
+}
+#login {
+    grid-area: login;
+}
+#shopping-cart {
+    grid-area: shopping-cart;
+}
