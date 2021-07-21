@@ -3,6 +3,7 @@ html {
     min-height: 100%;
 }
 
+
 #navbar {
     display:grid;
     grid-template-columns: 1fr 50px 50px 50px 50px;
@@ -13,13 +14,27 @@ html {
     "yeehaw-main search-btn login shopping-cart"
 }
 
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+    color:blue;
+}
+
+a:visited {
+    text-decoration:blue;
+}
+
 #yeehaw-main {
     grid-area: yeehaw-main;
     justify-self:center;
     align-self: center;
     font-family: 'Oi', cursive;
     font-size: 80px;
-    border: 0;
+    text-decoration:none;
+    color: #FFD6E3;
 }
 #search-btn {
     grid-area: search-btn;
@@ -30,3 +45,43 @@ html {
 #shopping-cart {
     grid-area: shopping-cart;
 }
+
+#shop {
+    grid-area: shop;
+    justify-self:right;
+    align-self:center;
+    position:relative;
+    left: 490px;
+}
+#gremmies {
+    grid-area: gremmies;
+    justify-self:right;
+    position:relative;
+    right: 50px;
+}
+#doggos {
+    grid-area: doggos;
+    justify-self:right;
+    position:relative;
+    right: 520px;
+
+}
+
+#about {
+    grid-area: about;
+    justify-self:right;
+    position:relative;
+    right: 1200px;
+}
+
+#navbar-under {
+    display:grid;
+    grid-auto-flow: column;
+    background-color:white;
+    grid-template-areas:
+    "shop gremmies doggos about"
+    
+
+
+}
+
